@@ -1,9 +1,10 @@
-export default function FriendListItem() {
+export default function FriendListItem({friend: {avatar, name, isOnline}}) {
     return (
+
         <div>
-            <img src="" alt="Avatar" width="48" />
-            <p>Friend name</p>
-            <p>Friend status</p>
+            <img src={avatar} alt="Avatar" width="48" />
+            <p>{name}</p>
+            <p>{isOnline}</p>
         </div>
     )
 }
