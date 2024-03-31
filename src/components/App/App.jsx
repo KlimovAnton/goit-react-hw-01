@@ -1,5 +1,7 @@
 import userData from "../../userData.json";
-import Profile from "../Profile/Profile"
+// import friends from "../../friends.json";
+import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList"
 
 
 export default function App() {
@@ -10,7 +12,8 @@ export default function App() {
             tag={userData.tag}
             location={userData.location}
             image={userData.avatar}
-            stats={userData.stats}/>
+            stats={userData.stats} />
+        <FriendList />
     </div>
     )
     
